@@ -142,6 +142,15 @@
   .edu h3{color:var(--navy);font-size:1.08rem;margin-bottom:6px;position:relative}
   .edu p{color:var(--muted);font-size:.9rem}
 
+  /* Attestations */
+  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+  .cert{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;display:flex;flex-direction:column;gap:10px;transition:transform .25s, box-shadow .25s;border-left:4px solid var(--gold)}
+  .cert:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .cert .yr2{align-self:flex-start;background:var(--navy);color:var(--gold-soft);padding:3px 12px;border-radius:50px;font-size:.78rem;font-weight:500}
+  .cert .em{font-size:1.6rem}
+  .cert h3{color:var(--navy);font-size:1rem}
+  .cert p{color:var(--muted);font-size:.86rem}
+
   /* Compétences — section sombre */
   .dark{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);color:var(--white)}
   .dark .title{color:var(--white)}
@@ -258,6 +267,7 @@
       <li><a href="#profil">Profil</a></li>
       <li><a href="#experience">Expérience</a></li>
       <li><a href="#formation">Formation</a></li>
+      <li><a href="#attestations">Attestations</a></li>
       <li><a href="#competences">Compétences</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -363,6 +373,20 @@
       <div class="edu reveal"><span class="yr">2002</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4h7a3 3 0 013 3v14a2 2 0 00-2-2H2zM22 4h-7a3 3 0 00-3 3v14a2 2 0 012-2h8z"/></svg></div><h3>Baccalauréat</h3><p>Lycée Ahoune Sané</p></div>
       <div class="edu reveal"><span class="yr">1998</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div><h3>BFEM</h3><p>Brevet de fin d'études moyennes — CEM de Coubanao</p></div>
       <div class="edu reveal"><span class="yr">1992</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.4L7 22l5-3 5 3-1.2-8.6"/></svg></div><h3>CFEE</h3><p>Certificat de fin d'études élémentaires — École de Oulampane</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ATTESTATIONS -->
+<section id="attestations" class="alt">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">Reconnaissances</div><h2 class="title">Attestations &amp; distinctions</h2></div>
+    <div class="cert-grid">
+      <div class="cert reveal"><span class="yr2">2025</span><span class="em">🤖</span><h3>Attestation de formation</h3><p>Intelligence artificielle (IA)</p></div>
+      <div class="cert reveal"><span class="yr2">2025</span><span class="em">💻</span><h3>Attestation de formation</h3><p>Word, Excel et PowerPoint</p></div>
+      <div class="cert reveal"><span class="yr2">2025</span><span class="em">🏅</span><h3>Attestation de reconnaissance</h3><p>Distinction reçue en 2025</p></div>
+      <div class="cert reveal"><span class="yr2">2021 – 2024</span><span class="em">⚽</span><h3>Attestation de reconnaissance</h3><p>Engagement dans les navétanes</p></div>
+      <div class="cert reveal"><span class="yr2">2008</span><span class="em">🏅</span><h3>Attestation de reconnaissance</h3><p>Distinction reçue en 2008</p></div>
     </div>
   </div>
 </section>
